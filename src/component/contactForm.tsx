@@ -10,7 +10,7 @@ export const ContactForm = ({ heading, para }: contactProps) => {
   return (
     <div className="text-body bg-white py-12 md:py-20 md:px-20 px-6">
       <div className="flex justify-center gap-4 flex-col items-center">
-        <H5 className="text-secondary">{heading}</H5>
+        <H5 className="text-secondary text-center">{heading}</H5>
         <p className="md:text-[40px] md:leading-[50px] text-center text-body font-semibold">
           {para}
         </p>
@@ -22,7 +22,7 @@ export const ContactForm = ({ heading, para }: contactProps) => {
           <input
             type="text"
             name="name"
-            className="border-2 border-body rounded-lg p-2"
+            className="border-2 border-body rounded-[10px] p-2"
           />
         </div>
 
@@ -31,7 +31,7 @@ export const ContactForm = ({ heading, para }: contactProps) => {
           <input
             type="email"
             name="email"
-            className="border-2 border-body rounded-lg p-2"
+            className="border-2 border-body rounded-[10px] p-2"
           />
         </div>
 
@@ -40,7 +40,7 @@ export const ContactForm = ({ heading, para }: contactProps) => {
           <input
             type="text"
             name="business"
-            className="border-2 border-body rounded-lg p-2"
+            className="border-2 border-body rounded-[10px] p-2"
           />
         </div>
 
@@ -51,7 +51,8 @@ export const ContactForm = ({ heading, para }: contactProps) => {
           <input
             type="text"
             name="challenge"
-            className="border-2 border-body rounded-lg p-2"
+            placeholder="Short answer"
+            className="border-2 border-body rounded-[10px] p-2"
           />
         </div>
 
@@ -60,7 +61,7 @@ export const ContactForm = ({ heading, para }: contactProps) => {
           <input
             type="text"
             name="website"
-            className="border-2 border-body rounded-lg p-2"
+            className="border-2 border-body rounded-[10px] p-2"
           />
         </div>
       </form>

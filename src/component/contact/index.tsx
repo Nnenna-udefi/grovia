@@ -13,7 +13,7 @@ const get = [
 export const ContactIndex = () => {
   return (
     <div className="">
-      <div className="text-body bg-white py-12 md:py-20 md:px-20 px-6">
+      <div className="text-body bg-white py-12 md:py-20 md:px-20 px-6 hidden md:block">
         <div className="flex justify-center gap-4 flex-col items-center">
           <H3>Let’s Take a Look at Your Brand For Free</H3>
           <p className="md:text-2xl text-center">

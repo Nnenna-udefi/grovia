@@ -2,10 +2,17 @@ import React from "react";
 import Image from "next/image";
 import logo from "@/component/images/logo.png";
 import { H5 } from "./ui/heading";
-import { navItems } from "./nav";
 import Link from "next/link";
 import insta from "@/component/images/instagram.png";
 import tiktok from "@/component/images/Tiktok.png";
+
+const navItems = [
+  { text: "Home", link: "/" },
+  { text: "About", link: "/about" },
+  { text: "Services", link: "/services" },
+  { text: "Work", link: "/work" },
+  { text: "Contact", link: "/contact" },
+];
 
 export const Footer = () => {
   return (
