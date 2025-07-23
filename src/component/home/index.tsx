@@ -3,9 +3,10 @@ import { H1, H3, H5, H6 } from "../ui/heading";
 import { LightBtn } from "../ui/lighBtn";
 import { ColouredBtn } from "../ui/colouredBtn";
 import { reviews, services, works } from "../lib/constants";
-import aboutImg from "@/component/images/about-us-image.png";
+import aboutImg from "@/images/about-us-image.png";
 import Image from "next/image";
-import aboutImg2 from "@/component/images/about-us2.png";
+import aboutImg2 from "@/images/about-us2.png";
+import Link from "next/link";
 
 export const HomeComponent = () => {
   return (
@@ -20,8 +21,13 @@ export const HomeComponent = () => {
           intelligence
         </p>
         <div className="flex md:flex-row flex-col gap-6">
-          <LightBtn text="View Our Work" className=" py-4" />
-          <ColouredBtn text="Get Free Brand Audit" className="" />
+          <Link href="/works">
+            <LightBtn text="View Our Work" className=" py-4" />
+          </Link>
+          <Link href="/contact">
+            {" "}
+            <ColouredBtn text="Get Free Audit" />
+          </Link>
         </div>
       </div>
 

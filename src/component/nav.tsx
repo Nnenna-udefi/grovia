@@ -1,10 +1,10 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-import logo from "@/component/images/logo.png";
+import logo from "@/images/logo.png";
 import Link from "next/link";
 import { ColouredBtn } from "./ui/colouredBtn";
-import Menu from "@/component/images/menu.png";
+import Menu from "@/images/menu.png";
 import { usePathname } from "next/navigation";
 import { X } from "lucide-react";
 

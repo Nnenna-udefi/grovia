@@ -1,6 +1,6 @@
 import React from "react";
 import { H2, H3 } from "../ui/heading";
-import elevano from "@/component/images/elevano-(1).png";
+import elevano from "@/images/elevano-(1).png";
 import Image from "next/image";
 import { workBlocks } from "../lib/constants";
 

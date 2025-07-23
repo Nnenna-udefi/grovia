@@ -29,7 +29,7 @@ export const ContactIndex = () => {
               {get.map((items) => (
                 <div
                   key={items.id}
-                  className="border-2 border-gray rounded-lg px-6 pt-8 w-[200px] h-[160px] text-center"
+                  className="border-2 border-gray font-medium rounded-lg px-6 pt-8 w-[200px] h-[160px] text-center"
                 >
                   <H6>{items.text}</H6>
                 </div>

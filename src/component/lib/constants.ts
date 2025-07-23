@@ -1,12 +1,12 @@
-import elevano from "@/component/images/elevano.png";
-import scale from "@/component/images/scale.png";
-import stratigen from "@/component/images/scale2.png";
-import scalelab from "@/component/images/Scalelab.png";
-import bricklab from "@/component/images/brickland-1.png";
-import elevate from "@/component/images/elevate consulting.png";
-import strati from "@/component/images/Stratigen 1.png";
-import mentorly from "@/component/images/mentor.png";
-import carewise from "@/component/images/carewise.png";
+import elevano from "@/images/elevano.png";
+import scale from "@/images/scale.png";
+import stratigen from "@/images/scale2.png";
+import scalelab from "@/images/Scalelab.png";
+import bricklab from "@/images/brickland-1.png";
+import elevate from "@/images/elevate consulting.png";
+import strati from "@/images/Stratigen 1.png";
+import mentorly from "@/images/mentor.png";
+import carewise from "@/images/carewise.png";
 
 export const reviews = [
   {

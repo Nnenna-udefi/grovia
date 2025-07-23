@@ -1,5 +1,6 @@
 import React from "react";
 import { H5 } from "./ui/heading";
+import { ColouredBtn } from "./ui/colouredBtn";
 
 interface contactProps {
   heading?: string;
@@ -63,6 +64,10 @@ export const ContactForm = ({ heading, para }: contactProps) => {
             name="website"
             className="border-2 border-body rounded-[10px] p-2"
           />
+        </div>
+
+        <div className="flex justify-center items-center pt-6">
+          <ColouredBtn text="Submit Request" />
         </div>
       </form>
     </div>
