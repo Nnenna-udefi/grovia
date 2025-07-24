@@ -23,7 +23,7 @@ export const H2 = ({ children, className }: HeadingProps) => {
   return (
     <h2
       className={cn(
-        "font-poppins font-bold text-[18px] md:text-[48px] leading-[26px] md:leading-[66px] tracking-normal",
+        "font-poppins font-bold text-[24px] md:text-[48px] leading-[26px] md:leading-[66px] tracking-normal",
         className
       )}
     >
@@ -36,7 +36,7 @@ export const H3 = ({ children, className }: HeadingProps) => {
   return (
     <h3
       className={cn(
-        "font-poppins font-semibold text-[16px] md:text-[32px] leading-[24px] md:leading-[40px] tracking-normal",
+        "font-poppins font-semibold text-[20px] md:text-[32px] leading-[24px] md:leading-[40px] tracking-normal",
         className
       )}
     >
@@ -49,7 +49,7 @@ export const H4 = ({ children, className }: HeadingProps) => {
   return (
     <h4
       className={cn(
-        "font-poppins font-semibold text-[14px] md:text-[28px] leading-[22px] md:leading-[36px] tracking-normal",
+        "font-poppins font-semibold text-[18px] md:text-[28px] leading-[22px] md:leading-[36px] tracking-normal",
         className
       )}
     >

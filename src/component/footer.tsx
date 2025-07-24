@@ -8,9 +8,9 @@ import { Linkedin } from "lucide-react";
 
 const navItems = [
   { text: "Home", link: "/" },
-  { text: "About", link: "/about" },
-  { text: "Services", link: "/services" },
-  { text: "Work", link: "/work" },
+  { text: "About", link: "#about" },
+  { text: "Services", link: "#services" },
+  { text: "Work", link: "/works" },
   { text: "Contact", link: "/contact" },
 ];
 

@@ -31,7 +31,10 @@ export const HomeComponent = () => {
         </div>
       </div>
 
-      <div className="flex justify-center gap-4 flex-col items-center py-20">
+      <div
+        className="flex justify-center gap-4 flex-col items-center py-20"
+        id="about"
+      >
         <H5 className="text-secondary">About Us</H5>
         <p className="md:text-[40px] text-[18px] leading-[100%] md:leading-[50px] text-center text-body font-semibold">
           Built for Growth. Backed by Experience
@@ -57,7 +60,10 @@ export const HomeComponent = () => {
         </div>
       </div>
 
-      <div className="flex justify-center gap-6 flex-col items-center">
+      <div
+        className="flex justify-center gap-6 flex-col items-center"
+        id="services"
+      >
         <H5 className="text-secondary">Smart Services for Ambitious Brands</H5>
         <p className="md:text-[40px] text-[18px] leading-[100%] md:leading-[50px] text-center text-body font-semibold">
           We help business and enterprise grow with the right mix of strategy,
@@ -95,7 +101,9 @@ export const HomeComponent = () => {
               <Image src={work.img} alt="work ige" />
               <div>
                 <p className="py-6">{work.text}</p>
-                <p className="text-secondary">{work.link}</p>
+                <Link href={work.link}>
+                  <p className="text-secondary">{work.case}</p>
+                </Link>
               </div>
             </div>
           ))}

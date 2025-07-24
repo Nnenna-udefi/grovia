@@ -3,6 +3,7 @@ import { H2, H3 } from "../ui/heading";
 import elevano from "@/images/elevano-(1).png";
 import Image from "next/image";
 import { workBlocks } from "../lib/constants";
+import Link from "next/link";
 
 export const WorkIndex = () => {
   return (
@@ -27,11 +28,13 @@ export const WorkIndex = () => {
             className="text-[14px] flex flex-col  gap-4 p-6 rounded-md md:text-[24px] leading-[20px] md:leading-[32px] text-[#00000099]"
           >
             <Image src={work.img} alt="work ige" />
-            <div>
-              <p>{work.title}</p>
-              <H3 className="py-3 text-black">{work.text}</H3>
-              <p>{work.engagement}</p>
-            </div>
+            <Link href={work.link}>
+              <div>
+                <p>{work.title}</p>
+                <H3 className="py-3 text-black">{work.text}</H3>
+                <p>{work.engagement}</p>
+              </div>
+            </Link>
           </div>
         ))}
       </div>
