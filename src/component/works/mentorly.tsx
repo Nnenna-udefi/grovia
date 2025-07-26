@@ -16,7 +16,7 @@ export const Mentorly = () => {
         Company: <span className="font-medium">Mentorly</span>
       </p>
       <div className="pt-10">
-        <Image src={mentorImg} alt="mentorly" />
+        <Image src={mentorImg} alt="mentorly" className="max-w-full" />
       </div>
 
       <div className="pt-14">

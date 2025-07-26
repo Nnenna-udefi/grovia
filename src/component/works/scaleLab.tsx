@@ -16,7 +16,7 @@ export const ScaleLab = () => {
         Company: <span className="font-medium">Scale Lab</span>
       </p>
       <div className="pt-10">
-        <Image src={scaleImg} alt="scale-img" />
+        <Image src={scaleImg} alt="scale-img" className="max-w-full" />
       </div>
 
       <div className="pt-14">

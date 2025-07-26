@@ -11,7 +11,7 @@ import carewise from "@/images/carewise.png";
 export const reviews = [
   {
     id: 1,
-    text: "Grovia didn’t just design a logo; they helped us become a brand people trust. Sales jumped by 60% within 90 days.",
+    text: "Grovia didn’t just design a logo; they helped us become a brand people trust. Sales jumped by 60% within 30 days.",
     client: "Jane Ugwoke, CEO Jandjhair",
   },
   {
@@ -62,7 +62,7 @@ export const works = [
   {
     id: 3,
     img: stratigen,
-    text: "Stratigen: 2.5x engagement through  content and social media strategy",
+    text: "Our engagement doubled within weeks. Grovia didn’t just design they built strategy that worked.",
     case: "View Case Study",
     link: "/works/stratigen",
   },

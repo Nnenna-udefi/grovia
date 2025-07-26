@@ -16,7 +16,7 @@ export const Stratigen = () => {
         Company: <span className="font-medium">Stratigen</span>
       </p>
       <div className="pt-10">
-        <Image src={stratiImg} alt="stratigen" />
+        <Image src={stratiImg} alt="stratigen" className="max-w-full" />
       </div>
 
       <div className="pt-14">

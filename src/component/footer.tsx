@@ -17,7 +17,7 @@ const navItems = [
 export const Footer = () => {
   return (
     <div className="bg-body text-white ">
-      <div className="flex justify-between gap-4 md:flex-row flex-col py-12 md:py-20 md:px-20 px-6">
+      <div className="flex justify-between gap-4 lg:flex-row flex-col py-12 md:py-20 md:px-20 px-6">
         <div className="w-[60%] md:w-[40%]">
           <Image src={logo} alt="logo" />
           <H5 className="py-12 ">

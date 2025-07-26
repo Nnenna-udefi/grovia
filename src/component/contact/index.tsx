@@ -1,31 +1,39 @@
 import React from "react";
 import { ContactForm } from "../contactForm";
-import { H3, H6 } from "../ui/heading";
+import { H5 } from "../ui/heading";
 
-const get = [
-  { id: 1, text: "Honest review of your brand identity" },
-  { id: 2, text: "Website or social media feedback" },
-  { id: 3, text: "3–5 improvement tips" },
-  { id: 4, text: "Personalized next steps" },
-  { id: 5, text: "1-on-1 call" },
-];
+// const get = [
+//   { id: 1, text: "Honest review of your brand identity" },
+//   { id: 2, text: "Website or social media feedback" },
+//   { id: 3, text: "3–5 improvement tips" },
+//   { id: 4, text: "Personalized next steps" },
+//   { id: 5, text: "1-on-1 call" },
+// ];
 
 export const ContactIndex = () => {
   return (
     <div className="">
-      <div className="text-body bg-white py-12 md:py-20 md:px-20 px-6 hidden md:block">
+      <div className="text-body bg-white py-12 md:pt-20 md:pb-0 md:px-20 px-6 ">
         <div className="flex justify-center gap-4 flex-col items-center">
-          <H3>Let’s Take a Look at Your Brand For Free</H3>
-          <p className="md:text-2xl text-center">
+          <H5 className="md:text-secondary text-body">
+            Let’s build your business to a market leader
+          </H5>
+          <p className="text-center text-[32px] hidden md:block leading-[40px]">
+            Tell us about your business goals and we’ll send you a free growth
+            audit packed with clarity and insight and actionable recommendations
+            tailored for you
+          </p>
+
+          <p className="text-center text-[16px]  leading-[24px] md:hidden block">
             We&apos;ll analyze your brand visuals, voice, and positioning to
             find what’s missing and what can grow.
           </p>
         </div>
 
-        <div className="flex justify-center gap-4 py-12 flex-col items-center">
+        {/* <div className="flex justify-center gap-4 py-12 flex-col items-center">
           <H3>What You’ll Get</H3>
           <div>
-            <div className="p-6 flex md:flex-row flex-col gap-4 justify-between">
+            <div className="p-6 flex lg:flex-row flex-col gap-4 justify-between">
               {get.map((items) => (
                 <div
                   key={items.id}
@@ -37,9 +45,9 @@ export const ContactIndex = () => {
             </div>
           </div>
           <H6>Delivered within 48 hours. No obligations. Just value.</H6>
-        </div>
+        </div> */}
       </div>
-      <ContactForm para="Start Your Free Audit" />
+      <ContactForm para="" />
     </div>
   );
 };

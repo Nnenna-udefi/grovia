@@ -16,7 +16,7 @@ export const Brickland = () => {
         Company: <span className="font-medium">Brickland</span>
       </p>
       <div className="pt-10">
-        <Image src={brickland} alt="brickland" />
+        <Image src={brickland} alt="brickland" className="max-w-full" />
       </div>
 
       <div className="pt-14">

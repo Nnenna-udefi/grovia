@@ -1,12 +1,12 @@
-import { ContactIndex } from "@/component/contact";
+import { EmailConfirmation } from "@/component/contact/emailConfirmation";
 import { ContactNav } from "@/component/contact/nav";
 import { Footer } from "@/component/footer";
 
-export default function Contact() {
+export default function Confirmation() {
   return (
     <div>
       <ContactNav />
-      <ContactIndex />
+      <EmailConfirmation />
       <Footer />
     </div>
   );

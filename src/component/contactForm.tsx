@@ -1,6 +1,7 @@
 import React from "react";
 import { H5 } from "./ui/heading";
 import { ColouredBtn } from "./ui/colouredBtn";
+import Link from "next/link";
 
 interface contactProps {
   heading?: string;
@@ -17,7 +18,7 @@ export const ContactForm = ({ heading, para }: contactProps) => {
         </p>
       </div>
 
-      <form className="pt-12 md:grid grid-cols-2 block gap-20">
+      <form className="pt-12 lg:grid grid-cols-2 block gap-20">
         <div className="flex flex-col w-full md:w-[80%] gap-2 font-medium text-[14px] md:text-[24px] leading-[20px] md:leading-[36px]">
           <label htmlFor="name">Full name</label>
           <input
@@ -28,7 +29,7 @@ export const ContactForm = ({ heading, para }: contactProps) => {
         </div>
 
         <div className="flex flex-col gap-2 w-full md:w-[80%] py-10 md:py-0 font-medium text-[14px] md:text-[24px] leading-[20px] md:leading-[36px]">
-          <label htmlFor="email">Email</label>
+          <label htmlFor="email">Email Address</label>
           <input
             type="email"
             name="email"
@@ -47,7 +48,10 @@ export const ContactForm = ({ heading, para }: contactProps) => {
 
         <div className="flex flex-col gap-2 w-full md:w-[80%] py-10 md:py-0 font-medium text-[14px] md:text-[24px] leading-[20px] md:leading-[36px]">
           <label htmlFor="challenge">
-            What&apos;s your biggest challenge right now?
+            What is your biggest business challenge right now?{" "}
+            <span className="font-normal">
+              (will you this to tailor your audit)
+            </span>
           </label>
           <input
             type="text"
@@ -58,7 +62,9 @@ export const ContactForm = ({ heading, para }: contactProps) => {
         </div>
 
         <div className="flex flex-col gap-2 w-full md:w-[80%] font-medium text-[14px] md:text-[24px] leading-[20px] md:leading-[36px]">
-          <label htmlFor="name">Website</label>
+          <label htmlFor="name">
+            Website <span className="font-normal">(optional)</span>
+          </label>
           <input
             type="text"
             name="website"
@@ -67,8 +73,10 @@ export const ContactForm = ({ heading, para }: contactProps) => {
         </div>
       </form>
 
-      <div className="flex justify-center items-center py-10">
-        <ColouredBtn text="Submit Request" />
+      <div className="flex justify-center items-center py-20">
+        <Link href="/contact/emailConfirmed">
+          <ColouredBtn text="Claim My Free Growth Audit" className="w-full" />
+        </Link>
       </div>
     </div>
   );

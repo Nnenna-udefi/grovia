@@ -16,7 +16,7 @@ export const Elevano = () => {
         Company: <span className="font-medium">Elevano</span>
       </p>
       <div className="pt-10">
-        <Image src={elevaImg} alt="elevano img" />
+        <Image src={elevaImg} alt="elevano img" className="max-w-full" />
       </div>
 
       <div className="pt-14">

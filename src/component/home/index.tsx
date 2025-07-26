@@ -7,11 +7,28 @@ import aboutImg from "@/images/about-us-image.png";
 import Image from "next/image";
 import aboutImg2 from "@/images/about-us2.png";
 import Link from "next/link";
+import gold from "@/images/gold color.png";
+import civa from "@/images/Civa white.png";
+import technova from "@/images/technova logo.png";
+import swift from "@/images/swift aid white.png";
 
 export const HomeComponent = () => {
   return (
-    <div className="py-12 md:py-20 md:px-20 px-6">
-      <div className="flex justify-center flex-col items-center">
+    <div className="py-12 md:py-20 ">
+      <div className="relative md:px-20 px-6 pb-20 md:pb-60 flex justify-center flex-col items-center">
+        <div
+          className="absolute hidden md:block blur-[100px]"
+          style={{
+            width: "254px",
+            height: "274px",
+            top: "86px",
+            left: "-70px",
+            background: "linear-gradient(0deg, #00CED1 0%, #F25C5C 100%)",
+            transform: "rotate(-136.7deg)",
+            opacity: 1,
+            zIndex: -1, // Ensures it stays behind the content
+          }}
+        />
         <H1 className="text-center text-primary">
           Accelerate Business Growth Through Smarter Branding
         </H1>
@@ -20,7 +37,7 @@ export const HomeComponent = () => {
           that convert trust into traction with design, strategy and artificial
           intelligence
         </p>
-        <div className="flex md:flex-row flex-col gap-6">
+        <div className="flex lg:flex-row flex-col pb-12 gap-6">
           <Link href="/works">
             <LightBtn text="View Our Work" className=" py-4" />
           </Link>
@@ -31,8 +48,16 @@ export const HomeComponent = () => {
         </div>
       </div>
 
+      <div className="bg-body">
+        <div className="grid grid-cols-1 py-10 md:px-20 px-6 justify-center place-items-center md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <Image src={gold} alt="gold logo" />
+          <Image src={civa} alt="civa logo" />
+          <Image src={technova} alt="technova logo" />
+          <Image src={swift} alt="swift logo" />
+        </div>
+      </div>
       <div
-        className="flex justify-center gap-4 flex-col items-center py-20"
+        className="flex md:px-20 px-6 justify-center gap-4 flex-col items-center py-20 lg:py-30"
         id="about"
       >
         <H5 className="text-secondary">About Us</H5>
@@ -40,7 +65,7 @@ export const HomeComponent = () => {
           Built for Growth. Backed by Experience
         </p>
 
-        <div className="flex md:flex-row flex-col gap-10 pt-8">
+        <div className="flex lg:flex-row flex-col gap-10 pt-8">
           <Image
             src={aboutImg}
             alt="about us image"
@@ -51,17 +76,17 @@ export const HomeComponent = () => {
             alt="about us image"
             className="md:hidden block"
           />
-          <H6 className="text-center md:text-left">
+          <H5 className="text-center md:text-left">
             Grovia has empowered forward-thinking businesses with the right mix
             of clarity, creativity, and conversion. We don’t just make things
             look good we help you scale smarter with strategy-first branding and
             growth tools tailored to your journey.
-          </H6>
+          </H5>
         </div>
       </div>
 
       <div
-        className="flex justify-center gap-6 flex-col items-center"
+        className="flex md:px-20 px-6 justify-center gap-6 flex-col items-center py-20"
         id="services"
       >
         <H5 className="text-secondary">Smart Services for Ambitious Brands</H5>
@@ -85,14 +110,14 @@ export const HomeComponent = () => {
         </div>
       </div>
 
-      <div className="flex justify-center gap-6 flex-col items-center py-10">
+      <div className="flex md:px-20 px-6 justify-center gap-6 flex-col items-center py-10 lg:py-20">
         <H5 className="text-secondary">Works That Speaks for Itself</H5>
         <p className="md:text-[40px] text-[18px]  md:leading-[50px] text-center text-body font-semibold">
           We’ve helped businesses go from invisible to unforgettable. Here are
           some of our favorite transformations:
         </p>
 
-        <div className="flex md:flex-row flex-col gap-6 pt-8">
+        <div className="flex lg:flex-row flex-col gap-6 pt-8">
           {works.map((work) => (
             <div
               key={work.id}
@@ -110,14 +135,14 @@ export const HomeComponent = () => {
         </div>
       </div>
 
-      <div className="flex justify-center gap-4 flex-col items-center pt-10">
+      <div className="flex md:px-20 px-6 justify-center gap-4 flex-col items-center pt-10 lg:pt-20">
         <H5 className="text-secondary">What Our Clients Say About Grovia</H5>
         <p className="md:text-[40px] text-[18px] leading-[100%] md:leading-[50px] text-center text-body font-semibold">
           The real proof of impact? Growth stories from real founders,
           businesses, and professionals we’ve worked with.
         </p>
 
-        <div className="flex md:flex-row flex-col gap-6 pt-8">
+        <div className="flex lg:flex-row flex-col gap-6 pt-8">
           {reviews.map((review) => (
             <div
               key={review.id}

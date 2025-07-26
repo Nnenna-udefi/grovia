@@ -16,7 +16,7 @@ export const Elevate = () => {
         Company: <span className="font-medium">Elevate Consulting</span>
       </p>
       <div className="pt-10">
-        <Image src={elevateImg} alt="elevate-img" />
+        <Image src={elevateImg} alt="elevate-img" className="max-w-full" />
       </div>
 
       <div className="pt-14">

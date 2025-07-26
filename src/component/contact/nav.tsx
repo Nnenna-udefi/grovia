@@ -3,20 +3,20 @@ import React, { useState } from "react";
 import Image from "next/image";
 import logo from "@/images/logo.png";
 import Link from "next/link";
-import { ColouredBtn } from "./ui/colouredBtn";
+
 import Menu from "@/images/menu.png";
 import { usePathname } from "next/navigation";
 import { X } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
+import { LightBtn } from "../ui/lighBtn";
 
 const navItems = [
   { text: "Home", link: "/" },
-  { text: "About Us", link: "#about" },
   { text: "Services", link: "#services" },
   { text: "Work", link: "/works" },
   { text: "Contact", link: "/contact" },
 ];
-export const Nav = () => {
+export const ContactNav = () => {
   const [nav, showNav] = useState(false);
 
   const pathname = usePathname();
@@ -28,7 +28,7 @@ export const Nav = () => {
     <div className="py-6 lg:px-12 px-4">
       <div className="flex justify-between gap-10 items-center">
         <Image src={logo} alt="logo" />
-        <div className="lg:flex w-full hidden gap-8 uppercase justify-between items-center text-xl">
+        <div className="w-full lg:flex hidden gap-10 uppercase justify-between items-center text-xl">
           {navItems.map((items) => {
             const isActive = pathname === items.link;
             return (
@@ -47,7 +47,11 @@ export const Nav = () => {
               </ul>
             );
           })}
-          <ColouredBtn text="Get Free Brand Audit" />
+          <Link href="/works">
+            <button className="bg-white border-2 transition duration-300 transform hover:scale-105 cursor-pointer border-black shadow rounded-xl py-3 px-2 w-[200px] hover:bg-black hover:text-white text-black font-semibold  text-xl ">
+              View Our Work
+            </button>
+          </Link>
         </div>
         <div className="block lg:hidden" onClick={handleNav}>
           <Image src={Menu} alt="menu" />
