@@ -3,12 +3,10 @@ import React, { useState } from "react";
 import Image from "next/image";
 import logo from "@/images/logo.png";
 import Link from "next/link";
-
 import Menu from "@/images/menu.png";
 import { usePathname } from "next/navigation";
 import { X } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
-import { LightBtn } from "../ui/lighBtn";
 
 const navItems = [
   { text: "Home", link: "/" },
