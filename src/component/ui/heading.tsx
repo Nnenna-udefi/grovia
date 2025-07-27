@@ -23,7 +23,7 @@ export const H2 = ({ children, className }: HeadingProps) => {
   return (
     <h2
       className={cn(
-        "font-poppins font-bold text-[24px] md:text-[48px] leading-[26px] md:leading-[66px] tracking-normal",
+        "font-poppins font-bold text-[24px] md:text-[48px] leading-[26px] md:leading-[56px] tracking-normal",
         className
       )}
     >

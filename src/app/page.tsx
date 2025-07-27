@@ -9,10 +9,8 @@ export default function Home() {
       <Nav />
       <HomeComponent />
       <ContactForm
-        heading="Let’s Build Your Brand Into a Market Leader"
-        para=" If you're serious about growing your business, we’re ready to
-          partner with you. Tell us what you're building and we’ll show you
-          what’s possible."
+        heading="Let’s build your business to a market Leader"
+        para="Tell us about your business goals and we’ll send you a free growth audit packed with clarity and insight and actionable recommendations tailored for you"
       />
       <Footer />
     </div>

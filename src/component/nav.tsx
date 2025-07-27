@@ -11,7 +11,7 @@ import { AnimatePresence, motion } from "framer-motion";
 
 const navItems = [
   { text: "Home", link: "/" },
-  { text: "About Us", link: "#about" },
+  { text: "About", link: "#about" },
   { text: "Services", link: "#services" },
   { text: "Work", link: "/works" },
   { text: "Contact", link: "/contact" },
@@ -27,8 +27,12 @@ export const Nav = () => {
   return (
     <div className="py-6 lg:px-12 px-4">
       <div className="flex justify-between gap-10 items-center">
-        <Image src={logo} alt="logo" />
-        <div className="lg:flex w-full hidden gap-8 uppercase justify-between items-center text-xl">
+        <Image
+          src={logo}
+          alt="logo"
+          className="w-[119px] h-[30px] md:w-[187px] -mt-3 md:h-[45px]"
+        />
+        <div className="lg:flex w-full hidden gap-4 justify-between items-center text-xl">
           {navItems.map((items) => {
             const isActive = pathname === items.link;
             return (

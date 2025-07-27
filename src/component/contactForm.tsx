@@ -1,6 +1,5 @@
 import React from "react";
 import { H5 } from "./ui/heading";
-import { ColouredBtn } from "./ui/colouredBtn";
 import Link from "next/link";
 
 interface contactProps {
@@ -10,10 +9,10 @@ interface contactProps {
 
 export const ContactForm = ({ heading, para }: contactProps) => {
   return (
-    <div className="text-body bg-white py-12 md:py-20 md:px-20 px-6">
+    <div className="text-body bg-white pb-12 pt-0 md:pt-10 md:pb-20 md:px-20 px-6">
       <div className="flex justify-center gap-4 flex-col items-center">
         <H5 className="text-secondary text-center">{heading}</H5>
-        <p className="md:text-[40px] md:leading-[50px] text-center text-body font-semibold">
+        <p className="md:text-[40px] text-[18px] leading-[26px] md:leading-[50px] text-center text-body font-semibold">
           {para}
         </p>
       </div>
@@ -24,7 +23,7 @@ export const ContactForm = ({ heading, para }: contactProps) => {
           <input
             type="text"
             name="name"
-            className="border-2 border-body rounded-[10px] p-2"
+            className="border md:border-2 border-black md:border-[#2D2D2D99] rounded-[10px] p-2"
           />
         </div>
 
@@ -33,7 +32,7 @@ export const ContactForm = ({ heading, para }: contactProps) => {
           <input
             type="email"
             name="email"
-            className="border-2 border-body rounded-[10px] p-2"
+            className="border md:border-2 border-black md:border-[#2D2D2D99] rounded-[10px] p-2"
           />
         </div>
 
@@ -42,7 +41,7 @@ export const ContactForm = ({ heading, para }: contactProps) => {
           <input
             type="text"
             name="business"
-            className="border-2 border-body rounded-[10px] p-2"
+            className="border md:border-2 border-black md:border-[#2D2D2D99] rounded-[10px] p-2"
           />
         </div>
 
@@ -56,8 +55,8 @@ export const ContactForm = ({ heading, para }: contactProps) => {
           <input
             type="text"
             name="challenge"
-            placeholder="Short answer"
-            className="border-2 border-body rounded-[10px] p-2"
+            // placeholder="Short answer"
+            className="border md:border-2 border-black md:border-[#2D2D2D99] rounded-[10px] p-2"
           />
         </div>
 
@@ -68,14 +67,16 @@ export const ContactForm = ({ heading, para }: contactProps) => {
           <input
             type="text"
             name="website"
-            className="border-2 border-body rounded-[10px] p-2"
+            className="border md:border-2 border-black md:border-[#2D2D2D99] rounded-[10px] p-2"
           />
         </div>
       </form>
 
       <div className="flex justify-center items-center py-20">
         <Link href="/contact/emailConfirmed">
-          <ColouredBtn text="Claim My Free Growth Audit" className="w-full" />
+          <button className="bg-[#00CED1] transition duration-300 transform hover:scale-105 cursor-pointer shadow rounded-[10px]  md:w-[400px] w-[240px] h-[45px] md:h-[70px] hover:bg-[#00BFC2] text-white font-semibold md:leading-[32px] text-[14px] leading-normal md:text-[24px]">
+            Claim My Free Growth{" "}
+          </button>
         </Link>
       </div>
     </div>

@@ -25,8 +25,12 @@ export const ContactNav = () => {
   return (
     <div className="py-6 lg:px-12 px-4">
       <div className="flex justify-between gap-10 items-center">
-        <Image src={logo} alt="logo" />
-        <div className="w-full lg:flex hidden gap-10 uppercase justify-between items-center text-xl">
+        <Image
+          src={logo}
+          alt="logo"
+          className="w-[119px] h-[30px] md:w-[187px] md:h-[45px]"
+        />
+        <div className="w-full lg:flex hidden gap-10  justify-between items-center text-xl">
           {navItems.map((items) => {
             const isActive = pathname === items.link;
             return (
@@ -46,7 +50,7 @@ export const ContactNav = () => {
             );
           })}
           <Link href="/works">
-            <button className="bg-white border-2 transition duration-300 transform hover:scale-105 cursor-pointer border-black shadow rounded-xl py-3 px-2 w-[200px] hover:bg-black hover:text-white text-black font-semibold  text-xl ">
+            <button className="bg-white rounded-[10px] md:w-[300px] w-[180px] h-[50px] md:h-[70px] md:leading-[32px] text-[14px] leading-normal md:text-[24px] border-2 transition duration-300 transform hover:scale-105 cursor-pointer border-black shadow py-3 px-2  hover:bg-black hover:text-white text-black font-semibold ">
               View Our Work
             </button>
           </Link>

@@ -13,9 +13,9 @@ import { H5 } from "../ui/heading";
 export const ContactIndex = () => {
   return (
     <div className="">
-      <div className="text-body bg-white py-12 md:pt-20 md:pb-0 md:px-20 px-6 ">
+      <div className="text-body bg-white pt-12 md:pt-20 pb-0 md:px-20 px-6 ">
         <div className="flex justify-center gap-4 flex-col items-center">
-          <H5 className="md:text-secondary text-body">
+          <H5 className="md:text-secondary text-body text-center">
             Let’s build your business to a market leader
           </H5>
           <p className="text-center text-[32px] hidden md:block leading-[40px]">

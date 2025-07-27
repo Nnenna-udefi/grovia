@@ -11,7 +11,7 @@ import carewise from "@/images/carewise.png";
 export const reviews = [
   {
     id: 1,
-    text: "Grovia didn’t just design a logo; they helped us become a brand people trust. Sales jumped by 60% within 30 days.",
+    text: "Grovia didn’t just design a logo; they helped us become a brand people trust. Sales jumped by 30% within 60 days.",
     client: "Jane Ugwoke, CEO Jandjhair",
   },
   {
@@ -31,16 +31,22 @@ export const services = [
     id: 1,
     title: "Brand Strategy & Positioning",
     text: "We help you define what makes your brand valuable and position it where it matters most. Through market insight, audience clarity, and brand messaging, we build a strategic base that drives recognition, trust, and long-term relevance.",
+    mobileText:
+      "We help you uncover what makes your brand unique and position it clearly in the minds of your audience. From competitor research to brand messaging, we build a strategy that drives loyalty, trust, and long-term impact.",
   },
   {
     id: 2,
     title: "Visual Identity & Logo Systems",
     text: "Your visual identity isn’t just how you look it’s how you're remembered. We craft bold, adaptable design systems that speak your brand’s purpose and scale across every platform. From logos to full identity suites, we make your brand unmistakable.",
+    mobileText:
+      "More than just a logo we craft complete identity systems that work across platforms. From typography and color to logo marks and brand usage guides, we ensure your visuals communicate your essence and scale effortlessly with your business.",
   },
   {
     id: 3,
     title: "Web & Digital Experiences",
     text: "We create digital platforms from websites to landing pages  that engage your audience and guide them toward action, powered by great design and UX.",
+    mobileText:
+      "We create digital platforms from websites to landing pages  that engage your audience and guide them toward action, powered by great design and UX.We create digital platforms from websites to landing pages  that engage your audience and guide them toward action, powered by great design and UX.We create digital platforms from websites to landing pages  that engage your audience and guide them toward action, powered by great design and UX.",
   },
 ];
 
@@ -55,14 +61,14 @@ export const works = [
   {
     id: 2,
     img: scale,
-    text: "Scale Lab Consulting: Grew from local startup to national brand ",
+    text: "Scalelab a consulting Firm grew from local startup to national brand ",
     case: "View Case Study",
     link: "/works/scalelab",
   },
   {
     id: 3,
     img: stratigen,
-    text: "Our engagement doubled within weeks. Grovia didn’t just design they built strategy that worked.",
+    text: "Our engagement doubled within weeks. Grovia didn’t just design, they built strategy that worked",
     case: "View Case Study",
     link: "/works/stratigen",
   },

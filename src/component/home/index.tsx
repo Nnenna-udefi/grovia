@@ -1,5 +1,5 @@
 import React from "react";
-import { H1, H3, H5, H6 } from "../ui/heading";
+import { H1, H5 } from "../ui/heading";
 import { LightBtn } from "../ui/lighBtn";
 import { ColouredBtn } from "../ui/colouredBtn";
 import { reviews, services, works } from "../lib/constants";
@@ -32,7 +32,7 @@ export const HomeComponent = () => {
         <H1 className="text-center text-primary">
           Accelerate Business Growth Through Smarter Branding
         </H1>
-        <p className="text-black md:text-2xl text-lg font-medium text-center py-8 w-[80%] ">
+        <p className="text-black md:text-[24px] md:leading-[38px] text-[16px] font-medium text-center py-8  leading-[24px] md:w-[80%] w-full ">
           From ambitious SMEs to scaling enterprises, we create brand systems
           that convert trust into traction with design, strategy and artificial
           intelligence
@@ -61,50 +61,61 @@ export const HomeComponent = () => {
         id="about"
       >
         <H5 className="text-secondary">About Us</H5>
-        <p className="md:text-[40px] text-[18px] leading-[100%] md:leading-[50px] text-center text-body font-semibold">
+        <p className="md:text-[40px] text-[18px] leading-normal md:leading-[50px] text-center text-body font-semibold">
           Built for Growth. Backed by Experience
         </p>
 
-        <div className="flex lg:flex-row flex-col gap-10 pt-8">
+        <div className="flex lg:flex-row flex-col-reverse gap-10 pt-8">
           <Image
             src={aboutImg}
             alt="about us image"
-            className="hidden md:block"
+            width={600}
+            height={431}
+            className="hidden md:block w-full"
           />
           <Image
             src={aboutImg2}
             alt="about us image"
-            className="md:hidden block"
+            className="md:hidden block w-full"
           />
-          <H5 className="text-center md:text-left">
+          <p className="text-center text-[16px] md:text-[24px] leading-normal md:leading-[36px] md:text-left">
             Grovia has empowered forward-thinking businesses with the right mix
             of clarity, creativity, and conversion. We don’t just make things
             look good we help you scale smarter with strategy-first branding and
             growth tools tailored to your journey.
-          </H5>
+          </p>
         </div>
       </div>
 
       <div
-        className="flex md:px-20 px-6 justify-center gap-6 flex-col items-center py-20"
+        className="flex md:px-20 px-6 justify-center gap-6 flex-col items-center py-10 md:py-20"
         id="services"
       >
-        <H5 className="text-secondary">Smart Services for Ambitious Brands</H5>
-        <p className="md:text-[40px] text-[18px] leading-[100%] md:leading-[50px] text-center text-body font-semibold">
+        <H5 className="text-secondary text-center">
+          Our Growth-Driven Services that Helps you Win
+        </H5>
+        <p className="md:text-[40px] text-[18px] leading-[26px] md:leading-[50px] text-center text-body font-semibold">
           We help business and enterprise grow with the right mix of strategy,
           standout design, and performance-driven marketing. Whether you&apos;re
           building from scratch or scaling fast. Grovia gives you the tools to
           lead.
         </p>
 
-        <div className="flex md:flex-row flex-col gap-6 pt-8">
+        <div className="flex lg:flex-row flex-col justify-center gap-6 pt-10">
           {services.map((service) => (
             <div
               key={service.id}
-              className="p-6 rounded-lg border:none bg-[#00CED105] md:bg-white md:border-body md:border"
+              className="md:p-6 p-4 rounded-[10px] border:none md:w-[320px] lg:max-w-[400px]  bg-[#00CED10A] md:bg-white md:border-body md:border"
             >
-              <H3>{service.title}</H3>
-              <H6 className="pt-4">{service.text}</H6>
+              <h3 className="font-semibold text-[16px] md:text-[32px] leading-normal md:leading-[40px]">
+                {service.title}
+              </h3>
+              <p className="pt-4 text-[18px] hidden md:block leading-[26px]  ">
+                {service.text}
+              </p>
+              <p className="pt-4 text-[14px] md:hidden block leading-normal ">
+                {service.mobileText}
+              </p>
             </div>
           ))}
         </div>
@@ -113,21 +124,24 @@ export const HomeComponent = () => {
       <div className="flex md:px-20 px-6 justify-center gap-6 flex-col items-center py-10 lg:py-20">
         <H5 className="text-secondary">Works That Speaks for Itself</H5>
         <p className="md:text-[40px] text-[18px]  md:leading-[50px] text-center text-body font-semibold">
-          We’ve helped businesses go from invisible to unforgettable. Here are
-          some of our favorite transformations:
+          We’ve helped businesses go from invisible to unforgettable.
         </p>
 
         <div className="flex lg:flex-row flex-col gap-6 pt-8">
           {works.map((work) => (
             <div
               key={work.id}
-              className="text-[14px] flex flex-col items-center justify-center gap-4 p-6 rounded-md md:text-[18px] leading-[20px] md:leading-[28px] text-black bg-[#2D2D2D0F]"
+              className="text-[14px] flex flex-col items-center justify-center gap-4 p-6 rounded-[10px] md:text-[18px] leading-normal md:leading-[28px] text-black bg-[#2D2D2D0F]"
             >
-              <Image src={work.img} alt="work ige" />
+              <Image
+                src={work.img}
+                alt="work ige"
+                className="w-[59px] h-[59px] md:w-[100px] md:h-[100px]"
+              />
               <div>
                 <p className="py-6">{work.text}</p>
                 <Link href={work.link}>
-                  <p className="text-secondary">{work.case}</p>
+                  <p className="text-secondary font-semibold">{work.case}</p>
                 </Link>
               </div>
             </div>
@@ -136,20 +150,20 @@ export const HomeComponent = () => {
       </div>
 
       <div className="flex md:px-20 px-6 justify-center gap-4 flex-col items-center pt-10 lg:pt-20">
-        <H5 className="text-secondary">What Our Clients Say About Grovia</H5>
-        <p className="md:text-[40px] text-[18px] leading-[100%] md:leading-[50px] text-center text-body font-semibold">
-          The real proof of impact? Growth stories from real founders,
-          businesses, and professionals we’ve worked with.
+        <H5 className="text-secondary">Testimonials</H5>
+        <p className="md:text-[40px] text-[18px] leading-normal md:leading-[50px] text-center text-body font-semibold">
+          The real proof of impact, Growth stories from real founders,
+          businesses and professionals we’ve worked with
         </p>
 
         <div className="flex lg:flex-row flex-col gap-6 pt-8">
           {reviews.map((review) => (
             <div
               key={review.id}
-              className="text-[14px] p-6 rounded-md md:text-[18px] leading-[20px] md:leading-[28px] text-black md:bg-white border border-body md:border-none bg-[#00CED105]"
+              className="text-[14px] lg:max-w-[400px] md:w-[320px] p-6 rounded-[10px] md:text-[18px] leading-[22px] md:leading-[28px] text-black bg-white border border-black md:border-none lg:bg-[#00CED1]/[0.05]"
             >
               <p>{review.text}</p>
-              <p className="font-semibold pt-2">{review.client}</p>
+              <p className="font-semibold pt-4">{review.client}</p>
             </div>
           ))}
         </div>

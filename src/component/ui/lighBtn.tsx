@@ -10,7 +10,7 @@ export const LightBtn = ({ text, className }: Button) => {
     <div>
       <button
         className={cn(
-          "bg-white border-2 transition duration-300 transform hover:scale-105 cursor-pointer border-black shadow rounded-xl py-3 px-6 w-[300px] hover:bg-black hover:text-white text-black font-semibold  text-xl ",
+          "bg-white border-[1.5px] transition duration-300 transform hover:scale-105 cursor-pointer border-black shadow rounded-[10px] md:w-[300px] w-[180px] h-[50px] md:h-[70px] hover:bg-black hover:text-white text-black font-semibold md:leading-[32px] text-[14px] leading-normal md:text-[24px] ",
           className
         )}
       >

@@ -4,6 +4,7 @@ import Image from "next/image";
 import { H4, H6 } from "../ui/heading";
 import avatar from "@/images/Ellipse 7.png";
 import { ColouredBtn } from "../ui/colouredBtn";
+import Link from "next/link";
 
 export const Brickland = () => {
   return (
@@ -135,7 +136,9 @@ export const Brickland = () => {
         <p className="text-[18px] md:text-[32px] font-medium md:font-semibold leading-[32px]">
           Let’s create your success story
         </p>
-        <ColouredBtn text={"Get in touch"} />
+        <Link href="/contact">
+          <ColouredBtn text={"Get in touch"} />
+        </Link>
       </div>
     </div>
   );
