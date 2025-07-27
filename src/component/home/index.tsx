@@ -71,13 +71,14 @@ export const HomeComponent = () => {
             alt="about us image"
             width={600}
             height={431}
-            className="hidden md:block w-full"
+            className="hidden  md:block lg:w-[50%] w-full"
           />
           <Image
             src={aboutImg2}
             alt="about us image"
             className="md:hidden block w-full"
           />
+
           <p className="text-center text-[16px] md:text-[24px] leading-normal md:leading-[36px] md:text-left">
             Grovia has empowered forward-thinking businesses with the right mix
             of clarity, creativity, and conversion. We don’t just make things

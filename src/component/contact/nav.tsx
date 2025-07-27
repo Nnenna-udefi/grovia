@@ -28,7 +28,7 @@ export const ContactNav = () => {
         <Image
           src={logo}
           alt="logo"
-          className="w-[119px] h-[30px] md:w-[187px] md:h-[45px]"
+          className="w-[119px] h-[30px] md:w-[187px] -mt-3 md:h-[45px]"
         />
         <div className="w-full lg:flex hidden gap-10  justify-between items-center text-xl">
           {navItems.map((items) => {
