@@ -7,10 +7,10 @@ import aboutImg from "@/images/about-us-image.png";
 import Image from "next/image";
 import aboutImg2 from "@/images/about-us2.png";
 import Link from "next/link";
-import gold from "@/images/gold color.png";
-import civa from "@/images/Civa white.png";
-import technova from "@/images/technova logo.png";
-import swift from "@/images/swift aid white.png";
+// import gold from "@/images/gold color.png";
+// import civa from "@/images/Civa white.png";
+// import technova from "@/images/technova logo.png";
+// import swift from "@/images/swift aid white.png";
 
 export const HomeComponent = () => {
   return (
@@ -47,7 +47,7 @@ export const HomeComponent = () => {
           </Link>
         </div>
       </div>
-
+      {/* 
       <div className="bg-body">
         <div className="grid grid-cols-1 py-10 md:px-20 px-6 justify-center place-items-center md:grid-cols-2 lg:grid-cols-4 gap-6">
           <Image src={gold} alt="gold logo" />
@@ -55,7 +55,7 @@ export const HomeComponent = () => {
           <Image src={technova} alt="technova logo" />
           <Image src={swift} alt="swift logo" />
         </div>
-      </div>
+      </div> */}
       <div
         className="flex md:px-20 px-6 justify-center gap-4 flex-col items-center py-20 lg:py-30"
         id="about"
@@ -106,7 +106,7 @@ export const HomeComponent = () => {
           {services.map((service) => (
             <div
               key={service.id}
-              className="md:p-6 p-4 rounded-[10px] border:none md:w-[320px] lg:max-w-[400px]  bg-[#00CED10A] md:bg-white md:border-body md:border"
+              className="md:p-6 p-4 rounded-[10px] border:none lg:w-[320px] lg:max-w-[400px]  bg-[#00CED10A] md:bg-white md:border-body md:border"
             >
               <h3 className="font-semibold text-[16px] md:text-[32px] leading-normal md:leading-[40px]">
                 {service.title}
@@ -161,7 +161,7 @@ export const HomeComponent = () => {
           {reviews.map((review) => (
             <div
               key={review.id}
-              className="text-[14px] lg:max-w-[400px] md:w-[320px] p-6 rounded-[10px] md:text-[18px] leading-[22px] md:leading-[28px] text-black bg-white border border-black md:border-none lg:bg-[#00CED1]/[0.05]"
+              className="text-[14px] lg:max-w-[400px] lg:w-[320px] p-6 rounded-[10px] md:text-[18px] leading-[22px] md:leading-[28px] text-black bg-white border border-black md:border-none lg:bg-[#00CED1]/[0.05]"
             >
               <p>{review.text}</p>
               <p className="font-semibold pt-4">{review.client}</p>

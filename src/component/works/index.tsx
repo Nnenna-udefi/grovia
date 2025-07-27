@@ -11,7 +11,7 @@ export const WorkIndex = () => {
       <h3 className="hidden md:block text-secondary md:text-[24px] pb-10 md:pb-20 md:leading-[38px] font-medium text-center">
         Works that speak for itself
       </h3>
-      <H2 className="text-center pb-6 hidden md:block">
+      <H2 className="text-center pb-6 hidden md:block w-full">
         A Proven Track Record of Helping Businesses Stand Out, Sell More and
         Grow Smarter
       </H2>
@@ -27,7 +27,7 @@ export const WorkIndex = () => {
           alt="elevano"
           width={500}
           height={500}
-          className="md:w-full w-[329px] h-[280px]"
+          className="lg:max-[1250px] lg:max-h-[700px] md:w-full lg:h-[700px] md:h-[500px] w-[360px] h-[280px]"
         />
         <p className="text-[14px] md:text-[32px] leading-[20px] text-[#00000099] md:leading-[40px] ">
           Business Consulting

@@ -18,7 +18,7 @@ export const ContactForm = ({ heading, para }: contactProps) => {
       </div>
 
       <form className="pt-12 lg:grid grid-cols-2 block gap-20">
-        <div className="flex flex-col w-full md:w-[80%] gap-2 font-medium text-[14px] md:text-[24px] leading-[20px] md:leading-[36px]">
+        <div className="flex flex-col w-full lg:w-[80%] gap-2 font-medium text-[14px] md:text-[24px] leading-[20px] md:leading-[36px]">
           <label htmlFor="name">Full name</label>
           <input
             type="text"
@@ -27,7 +27,7 @@ export const ContactForm = ({ heading, para }: contactProps) => {
           />
         </div>
 
-        <div className="flex flex-col gap-2 w-full md:w-[80%] py-10 md:py-0 font-medium text-[14px] md:text-[24px] leading-[20px] md:leading-[36px]">
+        <div className="flex flex-col gap-2 w-full lg:w-[80%] py-10 lg:py-0 font-medium text-[14px] md:text-[24px] leading-[20px] md:leading-[36px]">
           <label htmlFor="email">Email Address</label>
           <input
             type="email"
@@ -36,7 +36,7 @@ export const ContactForm = ({ heading, para }: contactProps) => {
           />
         </div>
 
-        <div className="flex flex-col gap-2 w-full md:w-[80%] font-medium text-[14px] md:text-[24px] leading-[20px] md:leading-[36px]">
+        <div className="flex flex-col gap-2 w-full lg:w-[80%] font-medium text-[14px] md:text-[24px] leading-[20px] md:leading-[36px]">
           <label htmlFor="business">Business name</label>
           <input
             type="text"
@@ -45,7 +45,7 @@ export const ContactForm = ({ heading, para }: contactProps) => {
           />
         </div>
 
-        <div className="flex flex-col gap-2 w-full md:w-[80%] py-10 md:py-0 font-medium text-[14px] md:text-[24px] leading-[20px] md:leading-[36px]">
+        <div className="flex flex-col gap-2 w-full lg:w-[80%] py-10 lg:py-0 font-medium text-[14px] md:text-[24px] leading-[20px] md:leading-[36px]">
           <label htmlFor="challenge">
             What is your biggest business challenge right now?{" "}
             <span className="font-normal">
@@ -60,7 +60,7 @@ export const ContactForm = ({ heading, para }: contactProps) => {
           />
         </div>
 
-        <div className="flex flex-col gap-2 w-full md:w-[80%] font-medium text-[14px] md:text-[24px] leading-[20px] md:leading-[36px]">
+        <div className="flex flex-col gap-2 w-full lg:w-[80%] font-medium text-[14px] md:text-[24px] leading-[20px] md:leading-[36px]">
           <label htmlFor="name">
             Website <span className="font-normal">(optional)</span>
           </label>

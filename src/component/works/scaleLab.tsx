@@ -95,7 +95,13 @@ export const ScaleLab = () => {
       </div>
 
       <div className="flex gap-4 items-center py-16">
-        <Image src={avatar} alt="avatar" width={100} height={100} />
+        <Image
+          src={avatar}
+          alt="avatar"
+          width={100}
+          height={100}
+          className="w-[60px] h-[60px] md:w-[100px] md:h-[100px]"
+        />
         <div>
           <H6 className="font-semibold">Patricia, E</H6>
           <p className="text-[16px] pt-4 md:text-[18px] leading-[20px] md:leading-[26px]">
