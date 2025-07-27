@@ -3,9 +3,8 @@ import React, { useState } from "react";
 import Image from "next/image";
 import logo from "@/images/logo.png";
 import Link from "next/link";
-import Menu from "@/images/menu.png";
 import { usePathname } from "next/navigation";
-import { X } from "lucide-react";
+import { MenuIcon, X } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
 
 const navItems = [
@@ -28,7 +27,7 @@ export const ContactNav = () => {
         <Image
           src={logo}
           alt="logo"
-          className="w-[119px] h-[30px] md:w-[187px] -mt-3 md:h-[45px]"
+          className="w-[119px] h-[30px] md:w-[187px] md:-mt-3 mt-0 md:h-[45px]"
         />
         <div className="w-full lg:flex hidden gap-10  justify-between items-center text-xl">
           {navItems.map((items) => {
@@ -56,7 +55,7 @@ export const ContactNav = () => {
           </Link>
         </div>
         <div className="block lg:hidden" onClick={handleNav}>
-          <Image src={Menu} alt="menu" />
+          <MenuIcon />
         </div>
       </div>
       <AnimatePresence>

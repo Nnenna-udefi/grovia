@@ -15,7 +15,7 @@ import Link from "next/link";
 export const HomeComponent = () => {
   return (
     <div className="py-12 md:py-20 ">
-      <div className="relative md:px-20 px-6 pb-20 md:pb-60 flex justify-center flex-col items-center">
+      <div className="relative md:px-20 px-6 pb-10 md:pb-60 flex justify-center flex-col items-center">
         <div
           className="absolute hidden md:block blur-[100px]"
           style={{
