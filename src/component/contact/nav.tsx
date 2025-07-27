@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import logo from "@/images/logo.png";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { MenuIcon, X } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
 
@@ -15,11 +15,30 @@ const navItems = [
 ];
 export const ContactNav = () => {
   const [nav, showNav] = useState(false);
-
+  const router = useRouter();
   const pathname = usePathname();
 
   const handleNav = () => {
     showNav((prev) => !prev);
+  };
+
+  const handleNavClick = (link: string) => {
+    showNav(false); // Close the mobile nav
+
+    if (link.startsWith("#")) {
+      if (pathname !== "/") {
+        // If not on home, go to home with anchor
+        router.push(`/${link}`);
+      } else {
+        // If already on home, scroll to section
+        const el = document.querySelector(link);
+        if (el) {
+          el.scrollIntoView({ behavior: "smooth" });
+        }
+      }
+    } else {
+      router.push(link);
+    }
   };
   return (
     <div className="py-6 lg:px-12 px-4">
@@ -34,17 +53,16 @@ export const ContactNav = () => {
             const isActive = pathname === items.link;
             return (
               <ul key={items.text}>
-                <Link href={items.link}>
-                  <li
+                <li key={items.text}>
+                  <button
+                    onClick={() => handleNavClick(items.link)}
                     className={`${
-                      isActive
-                        ? " text-primary"
-                        : "text-body hover:text-primary"
+                      isActive ? "text-primary" : "text-body hover:text-primary"
                     }`}
                   >
                     {items.text}
-                  </li>
-                </Link>
+                  </button>
+                </li>
               </ul>
             );
           })}
@@ -84,19 +102,21 @@ export const ContactNav = () => {
               </div>
 
               <ul className="space-y-[30px] text-[18px] pl-2 mx-3 text-center pt-[40px]">
-                {navItems.map((items) => {
-                  const isActive = pathname === items.link;
+                {navItems.map((item) => {
+                  const isActive = pathname === item.link;
+
                   return (
-                    <li
-                      key={items.text}
-                      className={`${
-                        isActive
-                          ? " text-primary"
-                          : "text-body hover:text-primary "
-                      }`}
-                    >
-                      {" "}
-                      <Link href={items.link}>{items.text}</Link>
+                    <li key={item.text}>
+                      <button
+                        onClick={() => handleNavClick(item.link)}
+                        className={`${
+                          isActive
+                            ? "text-primary"
+                            : "text-body hover:text-primary"
+                        } w-full text-[18px]`}
+                      >
+                        {item.text}
+                      </button>
                     </li>
                   );
                 })}

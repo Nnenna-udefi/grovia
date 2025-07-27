@@ -49,7 +49,7 @@ export const ContactForm = ({ heading, para }: contactProps) => {
           <label htmlFor="challenge">
             What is your biggest business challenge right now?{" "}
             <span className="font-normal">
-              (will you this to tailor your audit)
+              (will use this to tailor your audit)
             </span>
           </label>
           <input

@@ -43,7 +43,7 @@ export const HomeComponent = () => {
           </Link>
           <Link href="/contact">
             {" "}
-            <ColouredBtn text="Get Free Audit" />
+            <ColouredBtn text="Get Free Growth Audit" />
           </Link>
         </div>
       </div>
@@ -57,7 +57,7 @@ export const HomeComponent = () => {
         </div>
       </div> */}
       <div
-        className="flex md:px-20 px-6 justify-center gap-4 flex-col items-center py-20 lg:py-30"
+        className="flex md:px-20 px-6 justify-center gap-4 flex-col items-center pb-20 lg:pb-30 "
         id="about"
       >
         <H5 className="text-secondary">About Us</H5>

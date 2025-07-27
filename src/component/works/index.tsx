@@ -21,21 +21,25 @@ export const WorkIndex = () => {
         some of our favorite transformations
       </h2>
 
-      <div className="flex flex-col gap-4 pt-10">
-        <Image
-          src={elevano}
-          alt="elevano"
-          width={500}
-          height={500}
-          className="lg:max-[1250px] rounded-[20px] lg:max-h-[700px] md:w-full lg:h-[700px] md:h-[500px] w-[360px] h-[280px]"
-        />
-        <p className="text-[14px] md:text-[32px] leading-[20px] text-[#00000099] md:leading-[40px] ">
-          Business Consulting
-        </p>
-        <h2 className="text-black text-[16px] md:text-[48px] leading-[20px] md:leading-[48px] font-semibold">
-          <Link href="/works/elevano">Elevano Brand Identify</Link>
-        </h2>
-      </div>
+      <Link href="/works/elevano">
+        <div className="flex flex-col gap-4 pt-10">
+          <div className="relative w-full max-w-[1250px] aspect-[4/5] md:aspect-[16/9] rounded-[20px] overflow-hidden">
+            <Image
+              src={elevano}
+              alt="elevano"
+              fill
+              className="object-cover rounded-[20px]"
+            />
+          </div>
+
+          <p className="text-[14px] md:text-[32px] leading-[20px] text-[#00000099] md:leading-[40px] ">
+            Business Consulting
+          </p>
+          <h2 className="text-black text-[16px] md:text-[48px] leading-[20px] md:leading-[48px] font-semibold">
+            Elevano Brand Identify
+          </h2>
+        </div>
+      </Link>
 
       <div className="grid md:grid-cols-2 grid-cols-1 gap-6 -mx-6 md:pt-20 pt-10">
         {workBlocks.map((work) => (
@@ -43,11 +47,11 @@ export const WorkIndex = () => {
             key={work.title}
             className="text-[14px] flex flex-col  gap-4 p-6 rounded-md md:text-[24px] leading-[20px] md:leading-[32px] text-[#00000099]"
           >
-            <Image src={work.img} alt="work ige" className="rounded-[20px]" />
             <Link href={work.link}>
+              <Image src={work.img} alt="work ige" className="rounded-[20px]" />
               <div>
                 <p>{work.title}</p>
-                <h3 className="py-3 text-black font-semibold text-[16px] md:text-[32px] leading-[20px] md:leading-[40px]">
+                <h3 className="py-1 md:py-3 text-black font-semibold text-[16px] md:text-[32px] leading-[20px] md:leading-[40px]">
                   {work.text}
                 </h3>
                 <p>{work.engagement}</p>
