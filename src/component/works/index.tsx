@@ -27,7 +27,7 @@ export const WorkIndex = () => {
           alt="elevano"
           width={500}
           height={500}
-          className="lg:max-[1250px] lg:max-h-[700px] md:w-full lg:h-[700px] md:h-[500px] w-[360px] h-[280px]"
+          className="lg:max-[1250px] rounded-[20px] lg:max-h-[700px] md:w-full lg:h-[700px] md:h-[500px] w-[360px] h-[280px]"
         />
         <p className="text-[14px] md:text-[32px] leading-[20px] text-[#00000099] md:leading-[40px] ">
           Business Consulting
