@@ -67,7 +67,7 @@ export const ContactNav = () => {
             );
           })}
         </div>
-        <Link href="/works">
+        <Link href="/works" className="lg:block hidden">
           <button className="bg-white rounded-[10px] md:w-[220px] w-[180px] h-[50px] md:h-[70px] md:leading-[32px] text-[14px] leading-normal md:text-[20px] border-2 transition duration-300 transform hover:scale-105 cursor-pointer border-black shadow py-3 px-2  hover:bg-black hover:text-white text-black font-semibold ">
             View Our Work
           </button>
