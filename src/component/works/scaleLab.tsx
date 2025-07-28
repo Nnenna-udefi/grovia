@@ -22,7 +22,7 @@ export const ScaleLab = () => {
 
       <div className="pt-14">
         <H4>Brand Overview</H4>
-        <p className="text-[16px] pt-4 md:text-[18px] leading-[20px] md:leading-[28px]">
+        <p className="text-[16px] pt-4 md:text-[18px] leading-[28px]">
           At Grovia, we partnered with Scale Lab Consulting to develop a bold,
           intelligent brand that reflects their role as growth architects for
           startups and SMEs. Scale Lab isn’t just a consulting firm it’s a
@@ -35,7 +35,7 @@ export const ScaleLab = () => {
 
       <div className="pt-14">
         <H4>Problem</H4>
-        <p className="text-[16px] pt-4 md:text-[18px] leading-[20px] md:leading-[28px]">
+        <p className="text-[16px] pt-4 md:text-[18px] leading-[28px]">
           Despite their expertise, Scale Lab lacked a cohesive brand that
           communicated their value at a glance. Their clients high-potential
           businesses were struggling with fragmented operations, weak

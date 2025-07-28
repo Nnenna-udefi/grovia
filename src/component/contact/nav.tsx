@@ -48,7 +48,7 @@ export const ContactNav = () => {
           alt="logo"
           className="w-[119px] h-[30px] md:w-[187px] md:-mt-3 mt-0 md:h-[45px]"
         />
-        <div className="w-full lg:flex hidden gap-10  justify-between items-center text-xl">
+        <div className="lg:flex hidden gap-12  justify-between items-center text-xl">
           {navItems.map((items) => {
             const isActive = pathname === items.link;
             return (
@@ -66,12 +66,12 @@ export const ContactNav = () => {
               </ul>
             );
           })}
-          <Link href="/works">
-            <button className="bg-white rounded-[10px] md:w-[300px] w-[180px] h-[50px] md:h-[70px] md:leading-[32px] text-[14px] leading-normal md:text-[24px] border-2 transition duration-300 transform hover:scale-105 cursor-pointer border-black shadow py-3 px-2  hover:bg-black hover:text-white text-black font-semibold ">
-              View Our Work
-            </button>
-          </Link>
         </div>
+        <Link href="/works">
+          <button className="bg-white rounded-[10px] md:w-[220px] w-[180px] h-[50px] md:h-[70px] md:leading-[32px] text-[14px] leading-normal md:text-[20px] border-2 transition duration-300 transform hover:scale-105 cursor-pointer border-black shadow py-3 px-2  hover:bg-black hover:text-white text-black font-semibold ">
+            View Our Work
+          </button>
+        </Link>
         <div className="block lg:hidden" onClick={handleNav}>
           <MenuIcon />
         </div>

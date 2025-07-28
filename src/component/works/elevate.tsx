@@ -22,7 +22,7 @@ export const Elevate = () => {
 
       <div className="pt-14">
         <H4>Brand Overview</H4>
-        <p className="text-[16px] pt-4 md:text-[18px] leading-[20px] md:leading-[28px]">
+        <p className="text-[16px] pt-4 md:text-[18px] leading-[28px]">
           Elevate Consulting is a strategic business consulting firm that
           partners with startups and SMEs to accelerate growth, improve
           operational efficiency, and drive long-term success. With a focus on

@@ -45,6 +45,17 @@ export const ContactForm = ({ heading, para }: contactProps) => {
           />
         </div>
 
+        <div className="flex lg:hidden pt-10 flex-col gap-2 w-full lg:w-[80%] font-medium text-[14px] md:text-[24px] leading-[20px] md:leading-[36px]">
+          <label htmlFor="name">
+            Website <span className="font-normal">(optional)</span>
+          </label>
+          <input
+            type="text"
+            name="website"
+            className="border md:border-2 border-black md:border-[#2D2D2D99] rounded-[10px] p-2"
+          />
+        </div>
+
         <div className="flex flex-col gap-2 w-full lg:w-[80%] py-10 lg:py-0 font-medium text-[14px] md:text-[24px] leading-[20px] md:leading-[36px]">
           <label htmlFor="challenge">
             What is your biggest business challenge right now?{" "}
@@ -52,15 +63,16 @@ export const ContactForm = ({ heading, para }: contactProps) => {
               (will use this to tailor your audit)
             </span>
           </label>
-          <input
-            type="text"
+          <textarea
+            cols={3}
             name="challenge"
             // placeholder="Short answer"
+
             className="border md:border-2 border-black md:border-[#2D2D2D99] rounded-[10px] p-2"
           />
         </div>
 
-        <div className="flex flex-col gap-2 w-full lg:w-[80%] font-medium text-[14px] md:text-[24px] leading-[20px] md:leading-[36px]">
+        <div className="lg:flex flex-col gap-2 -mt-23 w-full hidden lg:w-[80%] font-medium text-[14px] md:text-[24px] leading-[20px] md:leading-[36px]">
           <label htmlFor="name">
             Website <span className="font-normal">(optional)</span>
           </label>
@@ -74,8 +86,8 @@ export const ContactForm = ({ heading, para }: contactProps) => {
 
       <div className="flex justify-center items-center py-20">
         <Link href="/contact/emailConfirmed">
-          <button className="bg-[#00CED1] transition duration-300 transform hover:scale-105 cursor-pointer shadow rounded-[10px]  md:w-[400px] w-[240px] h-[45px] md:h-[70px] hover:bg-[#00BFC2] text-white font-semibold md:leading-[32px] text-[14px] leading-normal md:text-[24px]">
-            Claim My Free Growth{" "}
+          <button className="bg-[#00CED1] transition duration-300 transform hover:scale-105 cursor-pointer shadow rounded-[10px]  md:w-[400px] w-[240px] h-[45px] md:h-[70px] hover:bg-[#00BFC2] text-white font-semibold md:leading-[32px] text-[14px] leading-normal md:text-[22px]">
+            Claim My Free Growth Audit
           </button>
         </Link>
       </div>

@@ -22,7 +22,7 @@ export const Mentorly = () => {
 
       <div className="pt-14">
         <H4>Brand Overview</H4>
-        <p className="text-[16px] pt-4 md:text-[18px] leading-[20px] md:leading-[28px]">
+        <p className="text-[16px] pt-4 md:text-[18px] leading-[28px]">
           Mentorly is a growth platform designed for individuals ready to take
           ownership of their future through personalized learning, expert
           mentorship, and intentional habit-building. It bridges the gap between

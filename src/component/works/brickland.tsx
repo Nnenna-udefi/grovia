@@ -22,7 +22,7 @@ export const Brickland = () => {
 
       <div className="pt-14">
         <H4>Brand Overview</H4>
-        <p className="text-[16px] pt-4 md:text-[18px] leading-[20px] md:leading-[28px]">
+        <p className="text-[16px] pt-4 md:text-[18px] leading-[28px]">
           Brickland is a modern construction company with a mission to build
           more than just structures we build trust, value, and lasting impact.
           With a reputation for delivering premium construction solutions,

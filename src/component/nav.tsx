@@ -2,7 +2,6 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import logo from "@/images/logo.png";
-import { ColouredBtn } from "./ui/colouredBtn";
 import { usePathname, useRouter } from "next/navigation";
 import { MenuIcon, X } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
@@ -45,13 +44,13 @@ export const Nav = () => {
   };
   return (
     <div className="py-6 lg:px-12 px-4">
-      <div className="flex justify-between gap-10 items-center">
+      <div className="flex justify-between gap-13 items-center">
         <Image
           src={logo}
           alt="logo"
           className="w-[119px] h-[30px] md:w-[187px] md:-mt-3 mt-0 md:h-[45px]"
         />
-        <div className="lg:flex w-full hidden gap-4 justify-between items-center text-xl">
+        <div className="lg:flex gap-10 hidden justify-between items-center text-xl">
           {navItems.map((items) => {
             const isActive = pathname === items.link;
             return (
@@ -69,10 +68,12 @@ export const Nav = () => {
               </ul>
             );
           })}
-          <Link href="/contact">
-            <ColouredBtn text="Get Free Brand Audit" />
-          </Link>
         </div>
+        <Link href="/contact">
+          <button className="bg-[#00CED1] transition duration-300 transform hover:scale-105 cursor-pointer shadow rounded-[10px]  md:w-[250px] w-[180px] h-[50px] md:h-[70px] hover:bg-[#00BFC2] text-white font-semibold md:leading-[32px] text-[14px] leading-normal md:text-[20px] ">
+            Start Your Project
+          </button>
+        </Link>
         <div className="block lg:hidden" onClick={handleNav}>
           <MenuIcon />
         </div>

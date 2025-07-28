@@ -22,7 +22,7 @@ export const Elevano = () => {
 
       <div className="pt-14">
         <H4>Brand Overview</H4>
-        <p className="text-[16px] pt-4 md:text-[18px] leading-[20px] md:leading-[28px]">
+        <p className="text-[16px] pt-4 md:text-[18px] leading-[28px]">
           Elevano is a consulting firm focused on helping startups and small
           businesses scale through strategic clarity, operational structure, and
           expert guidance. With a mission centered on unlocking growth for
@@ -33,7 +33,7 @@ export const Elevano = () => {
 
       <div className="pt-14">
         <H4>Problem</H4>
-        <p className="text-[16px] pt-4 md:text-[18px] leading-[20px] md:leading-[28px]">
+        <p className="text-[16px] pt-4 md:text-[18px] leading-[28px]">
           While Elevano had a clear vision and strong leadership, their visual
           identity didn’t reflect their depth of expertise. They lacked a
           cohesive brand system which made their communications feel

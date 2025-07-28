@@ -36,7 +36,7 @@ export const WorkIndex = () => {
             Business Consulting
           </p>
           <h2 className="text-black text-[16px] md:text-[48px] leading-[20px] md:leading-[48px] font-semibold">
-            Elevano Brand Identify
+            Elevano Brand Identity
           </h2>
         </div>
       </Link>
@@ -49,7 +49,7 @@ export const WorkIndex = () => {
           >
             <Link href={work.link}>
               <Image src={work.img} alt="work ige" className="rounded-[20px]" />
-              <div>
+              <div className="pt-3">
                 <p>{work.title}</p>
                 <h3 className="py-1 md:py-3 text-black font-semibold text-[16px] md:text-[32px] leading-[20px] md:leading-[40px]">
                   {work.text}

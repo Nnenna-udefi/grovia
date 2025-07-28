@@ -37,7 +37,7 @@ export const HomeComponent = () => {
           that convert trust into traction with design, strategy and artificial
           intelligence
         </p>
-        <div className="flex lg:flex-row flex-col pb-12 gap-6">
+        <div className="flex lg:flex-row flex-col pb-12 gap-10">
           <Link href="/works">
             <LightBtn text="View Our Work" className=" py-4" />
           </Link>
@@ -106,7 +106,7 @@ export const HomeComponent = () => {
           {services.map((service) => (
             <div
               key={service.id}
-              className="md:p-6 p-4 rounded-[10px] border:none lg:w-[320px] lg:max-w-[400px]  bg-[#00CED10A] md:bg-white md:border-body md:border"
+              className="md:p-6 p-4 rounded-[10px] border:none lg:w-[350px] lg:max-w-[400px]  bg-[#00CED10A] md:bg-white md:border-body md:border"
             >
               <h3 className="font-semibold text-[16px] md:text-[32px] leading-normal md:leading-[40px]">
                 {service.title}
