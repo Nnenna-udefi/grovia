@@ -138,12 +138,16 @@ export const Brickland = () => {
         </div>
       </div>
 
-      <div className="flex justify-center items-center gap-16 py-10 flex-col">
+      <div className="flex justify-center text-center items-center gap-6 md:pt-10 md:pb-10 pt-2 pb-10 flex-col">
         <p className="text-[18px] md:text-[32px] font-medium md:font-semibold leading-[32px]">
-          Let’s create your success story
+          Want Similar Results for your Business
         </p>
-        <Link href="/contact">
-          <ColouredBtn text={"Get in touch"} />
+        <p className="md:text-[24px] text-[16px] leading-[24px] md:leading-[40px]">
+          We’ll show you what’s possible based on your goals and how we would
+          help you get there
+        </p>
+        <Link href="/contact" className="md:pt-10 pt-6">
+          <ColouredBtn text={"Start Your Project"} />
         </Link>
       </div>
     </div>

@@ -69,7 +69,7 @@ export const Nav = () => {
             );
           })}
         </div>
-        <Link href="/contact">
+        <Link href="/contact" className="lg:block hidden">
           <button className="bg-[#00CED1] transition duration-300 transform hover:scale-105 cursor-pointer shadow rounded-[10px]  md:w-[250px] w-[180px] h-[50px] md:h-[70px] hover:bg-[#00BFC2] text-white font-semibold md:leading-[32px] text-[14px] leading-normal md:text-[20px] ">
             Start Your Project
           </button>
