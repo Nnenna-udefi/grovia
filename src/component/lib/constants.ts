@@ -87,7 +87,7 @@ export const workBlocks = [
     title: "Brickland",
     text: "Landing Page",
     engagement: "+458 engagement in 2 weeks",
-    link: "/works/bricklan",
+    link: "/works/brickland",
   },
   {
     img: elevate,

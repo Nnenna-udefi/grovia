@@ -48,8 +48,11 @@ export const Nav = () => {
         <Image
           src={logo}
           alt="logo"
+          width={500}
+          height={500}
           className="w-[119px] h-[30px] md:w-[187px] md:-mt-3 mt-0 md:h-[45px]"
         />
+
         <div className="lg:flex gap-10 hidden justify-between items-center text-xl">
           {navItems.map((items) => {
             const isActive = pathname === items.link;
