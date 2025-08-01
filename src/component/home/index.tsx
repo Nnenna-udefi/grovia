@@ -132,7 +132,7 @@ export const HomeComponent = () => {
           {works.map((work) => (
             <div
               key={work.id}
-              className="text-[14px] flex flex-col items-center justify-center gap-4 p-6 rounded-[10px] md:text-[18px] leading-normal md:leading-[28px] text-black bg-[#2D2D2D0F]"
+              className="text-[14px] flex lg:w-[320px] w-full flex-col items-center justify-center gap-4 p-6 rounded-[10px] md:text-[18px] leading-normal md:leading-[28px] text-black bg-[#2D2D2D0F]"
             >
               <Image
                 src={work.img}
