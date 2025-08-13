@@ -3,8 +3,7 @@ import Image from "next/image";
 import logo from "@/images/logo.png";
 import { H5 } from "./ui/heading";
 import Link from "next/link";
-import insta from "@/images/instagram.png";
-import { Linkedin } from "lucide-react";
+import { Instagram, Linkedin } from "lucide-react";
 
 const navItems = [
   { text: "Home", link: "/" },
@@ -54,9 +53,7 @@ export const Footer = () => {
         <div>
           <H5 className="font-semibold">Social Media</H5>
           <div className="flex gap-6 py-6">
-            <Image src={insta} alt="instagram" />
-            {/* <Image src={tiktok} alt="tiktok" />
-             */}
+            <Instagram />
             <Linkedin />
           </div>
         </div>

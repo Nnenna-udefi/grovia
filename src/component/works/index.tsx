@@ -1,6 +1,6 @@
 import React from "react";
 import { H2 } from "../ui/heading";
-import elevano from "@/images/elevano-(1).png";
+import elevano from "@/images/elevano-white.png";
 import Image from "next/image";
 import { workBlocks } from "../lib/constants";
 import Link from "next/link";
@@ -23,21 +23,24 @@ export const WorkIndex = () => {
 
       <Link href="/works/elevano">
         <div className="flex flex-col gap-4 pt-10">
-          <div className="relative w-full max-w-[1250px] aspect-[4/5] md:aspect-[16/9] rounded-[20px] overflow-hidden">
+          <div className="relative bg-[#1F3A8B] max-w-[1250px] aspect-[4/5] md:aspect-[16/9] w-full flex flex-col justify-center items-center rounded-[20px] overflow-hidden group">
             <Image
               src={elevano}
               alt="elevano"
-              fill
-              className="object-cover rounded-[20px]"
+              width={350}
+              height={350}
+              className="w-fit transition-transform duration-500 ease-in-out group-hover:scale-120"
             />
           </div>
 
-          <p className="text-[14px] md:text-[32px] leading-[20px] text-[#00000099] md:leading-[40px] ">
-            Business Consulting
-          </p>
-          <h2 className="text-black text-[16px] md:text-[48px] leading-[20px] md:leading-[48px] font-semibold">
-            Elevano Brand Identity
-          </h2>
+          <div className="">
+            <p className="text-[14px] py-1 md:py-3 md:text-[32px] leading-[20px] text-[#00000099] md:leading-[40px] ">
+              Elevano
+            </p>
+            <h2 className="text-black text-[16px] md:text-[48px] leading-[20px] md:leading-[48px] font-semibold">
+              Elevano Brand Identity
+            </h2>
+          </div>
         </div>
       </Link>
 
@@ -48,7 +51,13 @@ export const WorkIndex = () => {
             className="text-[14px] flex flex-col  gap-4 p-6 rounded-md md:text-[24px] leading-[20px] md:leading-[32px] text-[#00000099]"
           >
             <Link href={work.link}>
-              <Image src={work.img} alt="work ige" className="rounded-[20px]" />
+              <div className="overflow-hidden rounded-[20px] group">
+                <Image
+                  src={work.img}
+                  alt="work image"
+                  className="rounded-[20px] transition-transform duration-500 ease-in-out group-hover:scale-120"
+                />
+              </div>
               <div className="pt-3">
                 <p>{work.title}</p>
                 <h3 className="py-1 md:py-3 text-black font-semibold text-[16px] md:text-[32px] leading-[20px] md:leading-[40px]">

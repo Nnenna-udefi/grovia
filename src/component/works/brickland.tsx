@@ -3,14 +3,13 @@ import brickland from "@/images/brickland-img.png";
 import Image from "next/image";
 import { H4, H6 } from "../ui/heading";
 import avatar from "@/images/Ellipse 7.png";
-import { ColouredBtn } from "../ui/colouredBtn";
-import Link from "next/link";
+import { Results } from "../results";
 
 export const Brickland = () => {
   return (
     <div className="py-12 md:py-20 md:px-20 px-6">
       <p className="text-[18px] leading-[24px] md:text-[28px] md:leading-[42px]">
-        Industry: <span className="font-medium">Consulting</span>
+        Industry: <span className="font-medium">Real Estate</span>
       </p>
 
       <p className="text-[18px] leading-[24px] pt-4 md:text-[28px] md:leading-[42px]">
@@ -138,18 +137,7 @@ export const Brickland = () => {
         </div>
       </div>
 
-      <div className="flex justify-center text-center items-center gap-6 md:pt-10 md:pb-10 pt-2 pb-10 flex-col">
-        <p className="text-[18px] md:text-[32px] font-medium md:font-semibold leading-[32px]">
-          Want Similar Results for your Business
-        </p>
-        <p className="md:text-[24px] text-[16px] leading-[24px] md:leading-[40px]">
-          We’ll show you what’s possible based on your goals and how we would
-          help you get there
-        </p>
-        <Link href="/contact" className="md:pt-10 pt-6">
-          <ColouredBtn text={"Start Your Project"} />
-        </Link>
-      </div>
+      <Results />
     </div>
   );
 };

@@ -6,7 +6,7 @@ import bricklab from "@/images/brickland-1.png";
 import elevate from "@/images/elevate consulting.png";
 import strati from "@/images/Stratigen 1.png";
 import mentorly from "@/images/mentor.png";
-import carewise from "@/images/carewise.png";
+import carewise from "@/images/carewise-img.png";
 
 export const reviews = [
   {
@@ -114,7 +114,7 @@ export const workBlocks = [
     img: carewise,
     title: "Carewise",
     text: "Landing Page",
-    engagement: "+250 engagement in 2 weeks",
+    engagement: "80%+ referral rate from satisfied clients.",
     link: "/works/carewise",
   },
 ];

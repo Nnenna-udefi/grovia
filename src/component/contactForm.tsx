@@ -46,9 +46,7 @@ export const ContactForm = ({ heading, para }: contactProps) => {
         </div>
 
         <div className="flex lg:hidden pt-10 flex-col gap-2 w-full lg:w-[80%] font-medium text-[14px] md:text-[24px] leading-[20px] md:leading-[36px]">
-          <label htmlFor="name">
-            Website <span className="font-normal">(optional)</span>
-          </label>
+          <label htmlFor="website">Website or social media handle</label>
           <input
             type="text"
             name="website"
@@ -73,9 +71,7 @@ export const ContactForm = ({ heading, para }: contactProps) => {
         </div>
 
         <div className="lg:flex flex-col gap-2 -mt-23 w-full hidden lg:w-[80%] font-medium text-[14px] md:text-[24px] leading-[20px] md:leading-[36px]">
-          <label htmlFor="name">
-            Website <span className="font-normal">(optional)</span>
-          </label>
+          <label htmlFor="website">Website or social media handle</label>
           <input
             type="text"
             name="website"
