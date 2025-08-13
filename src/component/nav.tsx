@@ -6,7 +6,7 @@ import { usePathname, useRouter } from "next/navigation";
 import { MenuIcon, X } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
-import mobileLogo from "@/images/Grovia-mobile.png";
+import mobileLogo from "@/images/Grovia-mobile.svg";
 
 const navItems = [
   { text: "Home", link: "/" },
@@ -54,11 +54,7 @@ export const Nav = () => {
           className="w-[119px] h-[30px] md:w-[187px] md:-mt-3 mt-0 md:h-[45px] md:block hidden "
         />
 
-        <Image
-          src={mobileLogo}
-          alt="logo"
-          className="w-[50px] h-[40px] md:hidden block"
-        />
+        <Image src={mobileLogo} alt="logo" className=" md:hidden block" />
 
         <div className="lg:flex gap-10 hidden justify-between items-center text-xl">
           {navItems.map((items) => {
