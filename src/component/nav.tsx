@@ -54,7 +54,11 @@ export const Nav = () => {
           className="w-[119px] h-[30px] md:w-[187px] md:-mt-3 mt-0 md:h-[45px] md:block hidden "
         />
 
-        <Image src={mobileLogo} alt="logo" className="md:hidden block w-fit" />
+        <Image
+          src={mobileLogo}
+          alt="logo"
+          className="w-[50px] h-[40px] md:hidden block"
+        />
 
         <div className="lg:flex gap-10 hidden justify-between items-center text-xl">
           {navItems.map((items) => {
