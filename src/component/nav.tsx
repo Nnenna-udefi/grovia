@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-import logo from "@/images/logo.png";
+import logo from "@/images/logo.svg";
 import { usePathname, useRouter } from "next/navigation";
 import { MenuIcon, X } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
@@ -46,16 +46,15 @@ export const Nav = () => {
   return (
     <div className="py-6 lg:px-12 px-4">
       <div className="flex justify-between gap-13 items-center">
-        <Image
-          src={logo}
-          alt="logo"
-          width={500}
-          height={500}
-          className="w-[119px] h-[30px] md:w-[187px] md:-mt-3 mt-0 md:h-[45px] md:block hidden "
-        />
+        <Link href={"/"}>
+          <Image
+            src={logo}
+            alt="logo"
+            className=" md:-mt-3 mt-0 md:block hidden "
+          />
 
-        <Image src={mobileLogo} alt="logo" className=" md:hidden block" />
-
+          <Image src={mobileLogo} alt="logo" className=" md:hidden block" />
+        </Link>
         <div className="lg:flex gap-10 hidden justify-between items-center text-xl">
           {navItems.map((items) => {
             const isActive = pathname === items.link;
