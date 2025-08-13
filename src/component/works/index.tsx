@@ -23,13 +23,13 @@ export const WorkIndex = () => {
 
       <Link href="/works/elevano">
         <div className="flex flex-col gap-4 pt-10">
-          <div className="relative bg-[#1F3A8B] max-w-[1250px] aspect-[4/5] md:aspect-[16/9] w-full flex flex-col justify-center items-center rounded-[20px] overflow-hidden group">
+          <div className="relative bg-[#1F3A8B] max-w-[1250px] aspect-[5/5] md:aspect-[16/9] w-full flex flex-col justify-center items-center rounded-[20px] overflow-hidden group">
             <Image
               src={elevano}
               alt="elevano"
               width={350}
               height={350}
-              className="w-fit transition-transform duration-500 ease-in-out group-hover:scale-120"
+              className="w-[200px] h-[175px] md:w-[380px] md:h-[350px] transition-transform duration-500 ease-in-out group-hover:scale-120"
             />
           </div>
 
